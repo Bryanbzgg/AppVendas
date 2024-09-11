@@ -2,7 +2,7 @@
 {
     public class Produto
     {
-        public Guid ProdutosId { get; set; }
+        public Guid ProdutoId { get; set; }
         public string ProdutoNome { get; set; }
         public double Valor { get; set; }
         public double QtadeEstoque { get; set; }
