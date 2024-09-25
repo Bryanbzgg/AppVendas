@@ -21,10 +21,11 @@ namespace AppVendas.Models
         [Range(0, double.MaxValue, ErrorMessage = "A quantidade em Estoque deve ser positivo")]
         public double QtadeEstoque { get; set; }
         [Display(Name = "Ativo?")]
-        public bool CadastroAtivo { get; set; } = true;
+        public bool? CadastroAtivo { get; set; } = true;
 
         //chave estrangeira como fazer referencia outra tabela
         [Required(ErrorMessage = "Por favor selecione uma Categoria!")]
+        [Display(Name = "Categoria")]
         public Guid CategoriaId { get; set; }
         public Categoria? Categoria { get; set; }
 
